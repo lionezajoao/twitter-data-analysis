@@ -1,0 +1,32 @@
+{
+  "name": "twitter-data-analysis",
+  "version": "1.0.0",
+  "description": "Twitter data analyst bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon public/index.js",
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lionezajoao/twitter-data-analysis.git"
+  },
+  "keywords": [
+    "Twitter",
+    "Data",
+    "Analysis"
+  ],
+  "author": "https://www.linkedin.com/in/lionezajoao/",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lionezajoao/twitter-data-analysis/issues"
+  },
+  "homepage": "https://github.com/lionezajoao/twitter-data-analysis#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15",
+    "twitter-api-v2": "^1.11.0"
+  },
+  "devDependencies": {
+  }
+}
