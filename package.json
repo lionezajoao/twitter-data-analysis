@@ -4,7 +4,7 @@
   "description": "Twitter data analyst bot",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon public/index.js",
+    "start": "node public/index.js",
     "test": "npm run test"
   },
   "repository": {
@@ -27,6 +27,7 @@
     "nodemon": "^2.0.15",
     "twitter-api-v2": "^1.11.0"
   },
+  "type": "module",
   "devDependencies": {
   }
 }

@@ -1,9 +1,13 @@
-const Search = require('../src/search');
-require('dotenv').config({path: './.env'});
+import { Repository } from '../src/repository/repository.js'
 
-const user = async () => {
-  const user = await Search.searchUser();
+const start = async () => {
+
+  const client = Repository.getClient();
+  
+  const user = await Repository.getUserIdFromUsername(client, 'k004l4');
   console.log(user);
-  const data = await Search.searchRecentTweets();
-  console.log(data)
+  // const data = await Repository.searchRecentTweets(client, 'bitcoin');
+  // console.log(data)
 };
+
+start()
