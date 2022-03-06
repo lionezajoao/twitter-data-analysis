@@ -33,7 +33,7 @@ export class Repository {
     }
 
     static createTextOnlyTweet = async (client, text) => {
-        await client.v1.tweet(text);
+        await client.v2.tweet(text);
     }
     static searchRecentTweets = async (client, term) => {
         return await client.v2.search(term);
