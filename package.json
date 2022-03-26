@@ -4,7 +4,7 @@
   "description": "Twitter data analyst bot",
   "main": "index.js",
   "scripts": {
-    "start": "node public/index.js",
+    "start": "node ./src/router/routes.js",
     "test": "npm run test"
   },
   "repository": {
@@ -24,10 +24,9 @@
   "homepage": "https://github.com/lionezajoao/twitter-data-analysis#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
+    "express": "^4.17.3",
     "nodemon": "^2.0.15",
     "twitter-api-v2": "^1.11.0"
   },
-  "type": "module",
-  "devDependencies": {
-  }
+  "type": "module"
 }

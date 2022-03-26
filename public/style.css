@@ -1,0 +1,22 @@
+body {
+    font: normal normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #CCCCCC;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.searchForm {
+    margin: 10px 10px 10px 10px ;
+}
+
+.searchButton {
+    margin-top: 10px;
+}
+
+.searchButton:hover {
+    background-color: grey;
+}

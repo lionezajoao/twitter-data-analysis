@@ -39,4 +39,7 @@ export class Repository {
         return await client.v2.search(term);
     };
 
+    static searchAllTweets = async (client, term) => {
+        return await client.v2.searchAll(term);
+    }
 }
