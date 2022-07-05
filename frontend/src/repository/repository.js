@@ -7,7 +7,7 @@ export class Repository {
     static getClient = () => {
         return new TwitterApi({
             appKey: process.env.API_KEY,
-            appSecret: process.env.API_SECRET,
+            appSecret: process.env.API_KEY_SECRET,
             accessToken: process.env.ACCESS_TOKEN,
             accessSecret: process.env.ACCESS_TOKEN_SECRET
         });
@@ -43,3 +43,11 @@ export class Repository {
         return await client.v2.searchAll(term);
     }
 }
+
+const teste = async () => {
+    const client = Repository.getClient();
+    const result = await Repository.createTextOnlyTweet(client, 'vasco')
+    console.log(result);
+}
+
+teste()
