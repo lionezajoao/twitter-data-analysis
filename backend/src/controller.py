@@ -7,6 +7,8 @@ class Controller(object):
 
     def get_tweets(self, body):
 
+        response = {}
+
         term = body.get('term')
         payload = {
             'lang': body.get('lang'),
@@ -14,9 +16,10 @@ class Controller(object):
             'count': body.get('count')
         }
         
-        response = actions.get_tweets(term, self.client, payload)
-        for tweet in response:
-            print(tweet)
-            print('-'*30)
+        tweet_list = actions.get_tweets(term=term, client=self.client, **payload)
+        for tweet in tweet_list:
+            treated_tweet = tweet._json
 
-        return body
+            response[treated_tweet['id']] = treated_tweet
+
+        return response
