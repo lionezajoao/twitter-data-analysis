@@ -1,4 +1,4 @@
-from backend.src import actions
+from src import actions
 
 class Controller(object):
 
